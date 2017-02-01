@@ -7,6 +7,7 @@ Installs the [Google Chrome browser](https://www.google.com/intl/en/chrome/brows
 ## Requirements
 
   - You have to agree to the [Google Chrome Terms of Service](https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html) before installing Google Chrome with this role.
+  - Please note, that Google does provide 64 bit version of Chrome only. So the role will only be executed on a 64 bit target host.
 
 ## Role Variables
 
