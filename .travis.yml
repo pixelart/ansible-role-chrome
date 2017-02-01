@@ -40,3 +40,10 @@ script:
 
   # Ensure Google Chrome is installed and working (still won't startup because there is no graphics environment)..
   - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm google-chrome || true'
+
+notifications:
+  slack:
+    rooms:
+      secure: Fz86GqnOdxD1G4634uyne2JD6el1csJeptJDeOaYCPsVIUL2dNP8kb0qAUuoT1TEUVrXpIbiCvnEsobXGcVw/vrrGLaQJedvB6UTZAU327Kf3wFr+Z/3xR/zUp8M9fNse6f+JkbN8BFSMjZkyNe6Xntu6OBPjy4Bv91Jrq0xWY5QoGTJx+7jtjsOyHdkfh/UOF+SJdRi/UDWktSJvILKvKRI14/tZti4BEyvDCB1otmH/3QWptXRSIwDtFa4FqbwTAtbdlMel73rfS0tGJI+7OgC54BvaP2aoYOok3pNcunu9xmrgMetR1JxLx0cCTCKaU6t4zBwLrwQl2inl0SNLXPu4WL1BdwPt90zvJbIPopdTrsf/XK4jgja3H47MumfZBxHV9GjCrsPukvXcA8SEoWutCqTyTgwGK+D2Cybc1gUezyDdtbMjhzXfo6WmVWPozGu8KXsD82uHq9P1ijawONGvmCJz/cMslwIuhZEAio5G9upeKOtmELgS072usLbp0WvKlDMnvIKRBnK1UGmKz/8najwLfMRKhIpWywMkY3potgVHTr1iW+VLhwnsw+BOrFP5wpSVi1LgD0cPiPCWUwKl/XaNU2NGKbvZw1pqU12W+RaBctjeibfTzUVHYZWUlXzMPk8cWC5LPEUZQ2n10g/f/bzlidn1BqLUdyMgwI=
+    on_success: change
+    on_failure: always
