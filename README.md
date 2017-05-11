@@ -21,6 +21,15 @@ The release channel of Google Chrome which should be installed. Can be either `s
     
 If this is set to `true` the GPU acceleration of Google Chrome will be disabled.
 
+    chrome_policies_managed: []
+    chrome_policies_recommended: []
+    
+A hashmap of policies you want to manage and enforce, and policies you want to recommend. See https://www.chromium.org/administrators/policy-list-3 for all policies.
+
+    chrome_policies_filename: 'policy.json'
+    
+The resulting filename of the policies in the respective directories. 
+
 ## Dependencies
 
 None.
