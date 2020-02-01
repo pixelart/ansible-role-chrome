@@ -1,7 +1,7 @@
 ---
-- include: setup-Debian.yml
+- include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'
-  static: no
+  # static: no
 
 - name: Delete package file
   file:
