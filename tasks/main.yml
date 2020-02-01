@@ -9,11 +9,11 @@
   when: chrome_package is not defined
 
 # Setup/install tasks.
-- include: setup.yml
-  static: no
+- include_tasks: setup.yml
+  # static: no
   when: ansible_architecture == 'x86_64'
 
 # Setup/install tasks.
-- include: configure.yml
-  static: no
+- include_tasks: configure.yml
+  # static: no
   when: ansible_architecture == 'x86_64'
